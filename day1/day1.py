@@ -1,6 +1,5 @@
 file1 = open("/home/valentin/Documentos/AdventOfCode24/day1/inputD1.txt", "r")
 
-
 list1 = []
 list2 = []
 while True:
@@ -15,13 +14,13 @@ while True:
 list1.sort()
 list2.sort()
 
+index = 0
+suma = 0
 
+while index < len(list1):
+    suma = suma + abs(list1[index] - list2[index])
+    index += 1
 
-
-
-
-
-
-
+print(suma)
 
 file1.close
